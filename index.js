@@ -69,3 +69,36 @@ constrange=(num1, num2, num3,num4)=>{
 }
 console.log(range(1,4))
 console.log(["ruben", "karen", "artut"].map((name)=>name.toUpperCase()));
+console.log(["ruben", "karen", "artut"].map((name)=>name.toLowerCase()));
+
+function student(firstName,lastName,age){
+    this.firstname=firstName;
+    this.lastName=lastName;
+    this.age=age;
+}
+
+const y=new student("Aram", "Baghdasaryan", 37)
+console.log(y.age)
+const inc=num=>num+1;
+let arr1=[1,6,7,10];
+const newArr1=arr1.map(inc);
+console.log(newArr1)
+const map=(func, arr)=>{
+let newarr=[]
+for(el of arr){
+newarr.push(func(el))
+}
+return(newarr)
+}
+const filter=(func, arr)=>{
+    let newArr2=[];
+    for(let el of arr){
+        newArr2.push(func(el))
+        if(newArr2.filter===isEaven){
+            return newArr2
+        }
+        else{
+            nothing
+        }
+    }
+}
